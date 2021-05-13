@@ -9,8 +9,16 @@ const Layout: React.FC = ({ children }) => {
       <Navbar />
         { children }
       <footer className={ styles.footer }>
-        Este es el footer
+        <h1 className='title'>Clase JSX</h1>
       </footer>
+
+      <style jsx>{`
+        .title{ 
+          text-align: center;
+          text-decoration: underline;
+         }
+      `}
+      </style>
     </div>
   )
 }
